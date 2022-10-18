@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<!-- <body> forms asre used in backend for action  -->
+  <div> 
+      <!-- forms is used for differnt types of input  -->
+      <form action="form.php">  
+          <!-- there are many types of inputs  -->
+          <input type="text" placeholder="enter your name"> 
+          <!-- label are like identifiers  -->
+          <label for="sectionida"> <br>
+            <input type="radio" value="section a" name="section" id="sectionida"> Section A
+          </label>
+          <!-- if two or more than two name are same in different labes then only one of them is clicked at a time  -->
+          <label for="sectionidb">
+            <input type="radio" value="section b" name="section" id="sectionidb"> Section B
+          </label>
+          <label for="sectionidc">
+            <input type="radio" value="section b" name="section" id="sectionidc" class="red blue"> Section C
+          </label> 
+          <br>
+          <label for="canteen"> Want food canteen Card</label> 
+          <input type="checkbox" name="Canteen Food Card" id="foodcard" class="red">
+        
+          <label for="canteen">sandwitch</label>
+          <input type="checkbox" name="sandwitch" id="san" class="red"> <br>
+
+          <textarea name="explain" id="explainn" cols="30" rows="10" placeholder="Explain why you want to join"></textarea>
+          <!-- select tag is used to get option  -->
+          <select name="car" id="car">Select your car
+            <option value="onmi">Omni</option>
+            <option value="onmi">Onmi1</option>
+            <option value="onmi">Onmi2</option>
+            <option value="onmi">Onmi3</option>
+            <option value="onmi">Onmi4</option>
+          </select>
+        
+          <!-- for "class" attribute we can form same function on all which come uner the same class  -->
+      </form>
+  </div>  
+</body>
+</html>
