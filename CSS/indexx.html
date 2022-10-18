@@ -1,0 +1,42 @@
+<!-- this is ch 1 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- use # to target id and . for class  -->
+    <!-- id is unique but class can be given to multiple -->
+    <!-- either u can use style after the title  -->
+    <style>
+        #first{
+            background-color: aqua;   
+        }
+        .bg-blue{
+            background-color: blue;
+            color: rgb(18, 255, 251);
+        }
+
+    </style> 
+    <!-- or u can use style tag within the specific targets  -->
+  </head>
+  <body>
+    <div id="first" style="background-color: aqua;">
+        first
+    </div>
+    <div id="second">
+        second
+    </div>
+    <section class="red">
+
+    </section>
+    <section class="red bg-blue border-purple">
+        red bg blue border purple
+    </section>
+    <div>
+
+    </div>
+  </body>
+</html>
