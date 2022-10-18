@@ -1,0 +1,88 @@
+<!-- css box model  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;       
+        }
+        .content{
+            height: 73px;
+            width: 335px;
+            background-color: red;
+            margin: 6px;
+            padding: 5px;
+            border: 3px solid black ;
+            /* border-width: 10px;
+            border-style: dotted;
+            border-color: aqua; */
+            border-radius: 9px;
+
+        }
+        /* order of margin border padding content  */
+        .mbpc{
+            background-image: url('mbpc.png');
+            background-repeat: no-repeat;
+            height: 1000px;
+            width: 450px;
+            background-size: contain;
+            margin: 0px;
+            
+        }   
+        /* order pf top right bottom left  */
+        .trbl{
+            background-image: url('trbl.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 1300px;
+            width: 512px
+           
+
+        }   
+        .box1{
+            background-color: rgb(78, 187, 241);
+            margin: 30px;
+            height: 220px;
+            width: 223px;
+            border: 3px solid grey;
+            
+
+        }    
+        .box2{
+            background-color: rgb(119, 241, 78);
+            margin: 20px;
+            height: 75px;
+            width: 100%;
+            padding: 2px;
+            border: 3px solid rgb(225, 4, 4);
+
+        }  
+    </style>
+   
+</head>
+<body>
+    <!-- height/width is calculated as : -->
+    <!-- total height = height+ top/bottom padding+ top/bottom border+ top/bottom margin   -->
+    <div class="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dolores quam, quos libero, nisi veniam autem, facere ut provident atque ipsam veritatis commodi consequatur dolorum.
+    </div>
+    <!-- margin collapsed concept mein the bigger margin is considered and usi ko use kiya jata h agar uske samne koi small margin h toh uski length ko bigger length ke under hi count kr lete hn  
+    ONLY WHEN MARGIN IS OVERLAPPING -->
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dignissimos adipisci voluptas dicta sed, facere laborum tenetur eligendi tempora laboriosam similique eum. Corrupti ad dolores suscipit quae repellendus vel cum, nam quod sapiente.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit unde eveniet, eum animi veniam aspernatur? Recusandae ut iste architecto sed, aliquid eligendi? Laboriosam maxime hic corporis iure cupiditate? Quod est voluptatum rem excepturi.
+    </div>
+    <div class="mbpc">  
+    </div>
+    <div class="trbl">
+    </div>
+</body>
+</html>

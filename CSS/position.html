@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        header{
+            background-color: black;
+            color: aliceblue;
+            height: 70px;
+            position: sticky;
+        }
+        ul{
+            background-color: coral;
+        }
+        li{
+           list-style: disc outside url('dn.jpg'); 
+        }
+            
+        p{
+            text-align: center;
+            border: 2px solid red;
+        }
+        .container{
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+            padding: 0 34px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+            position: absolute;
+    
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ipsum veritatis ad ducimus, consectetur ullam hic architecto deserunt nihil illo maiores sint quaerat a laudantium velit rerum, est debitis nam. Ducimus itaque assumenda eius.</p>
+        <div class="box">i</div>
+
+        <div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut magni eum quo quia modi tempora quae debitis natus ab minima, in cum earum odit! Eum nisi laborum reiciendis molestias odit at cupiditate voluptates placeat.</div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>orange</li>
+
+    </ul>
+</body>
+</html>
+
+<!-- POSITION PROPERTIES  -->
+
+<!-- Static :- the default position top/bottom/left/right these ppt won't work if postion is static[top/bottom/left/right/Z-index] -->
+
+<!-- Relative:- the [top/bottom/left/right/Z-index] will now work otherwise the element is in the flow of document  -->
+
+<!-- Absolute :- The element will scroll along with its container, until it is at the top of the container (or reaches the offset specified in top), and will then stop scrolling, so it stays visible.  -->
+
+<!-- Fixed :- it position itself with browser window scroll does not effect it  -->
+
+<!-- Sticky :- based on user's scroll position  -->
+
+<!-- Z-index :- ensures to keep it's element at the above another and helps in overlapping-->

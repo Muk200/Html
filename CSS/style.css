@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.red{
+    background-color: rgb(255, 195, 122);
+    color: rgb(53, 103, 148) 
+}
+.green{
+    background-color: blueviolet;
+    color: azure;
+}
+
+/* it can be "RGB" "HEX CODE" "HSL :HUE SATURATION LIGHTNESS"  */
+/* to change colour u can use hex colour it has a code #ff7180 and can use a hex colour picker */
+/* RGBA "A" alpha is a opacity value given with the rgb in vs vscode  */
